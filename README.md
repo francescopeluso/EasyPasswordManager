@@ -3,6 +3,15 @@
 ## What does this script do?
 Simply, you can generate random passwords, as long as you wish, and can register them in a local JSON file.
 
+```bash
+$ python3 password_generator.py 
+
+How much long the password has to be? >> 16
+Your password is: v6dgsKju8JajCYXr
+Would you like to associate this password with one of you accounts?
+[Insert the name of the platform, or leave blank] >> GitHub
+```
+
 ## Why did I create this when there are hundreds of programs that do the same thing, and even better?
 Because I'm just moving my first steps into serious coding, and to practice more on this language that I have almost always neglected.
 
