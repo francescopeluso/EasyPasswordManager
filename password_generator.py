@@ -1,6 +1,6 @@
 """
 Password Generator v1.0
-by Francesco Peluso - 14/04/2021
+by Francesco Peluso - 20/04/2021
 """
 
 import random
