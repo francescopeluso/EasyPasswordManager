@@ -1,5 +1,5 @@
 """
-Password Generator v1.0
+Password Generator v1.2
 by Francesco Peluso - 20/04/2021
 """
 
@@ -19,17 +19,23 @@ charsCaps   = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers     = "0123456789"
 punctuation = "!$%&/()=@#*[]\{\}"
 
+# little header on script start
+print("\n+----------------------------------------------+")
+print("|         Easy Password Generator v1.2         |")
+print("|     by Francesco Peluso - @thatsfrankie      |")
+print("+----------------------------------------------+")
+
 # ask user how much the password has to be long
-passLength = input("How much long the password has to be? >> ")
+passLength = input("\nHow much long the password has to be? >> ")
 
 # generate password by picking randomly the characters
 password = random.choices(chars+charsCaps+numbers+punctuation, k = int(passLength))
 password = "".join(password)
 
-print("Your password is: " + password)
+print("\nYour password is: " + password)
 
 # adding password to "a local database"
-print("Would you like to associate this password with one of you accounts?")
+print("\n\nWould you like to associate this password with one of you accounts?")
 answer = input("[Insert the name of the platform, or leave blank] >> ")
 
 if answer != "":
@@ -47,6 +53,7 @@ if answer != "":
         temp.append(x)
 
     write_json(data, filename)
+    print ("\nYour password has been associated!")
 else:
     with open(filename) as json_file:
         data = json.load(json_file)
@@ -57,3 +64,4 @@ else:
         temp.append(password)
 
     write_json(data, filename)
+    print ("\nOK. Remember that you can still find this password in the 'unassociated' section")
