@@ -82,10 +82,12 @@ def view_passwords():
         data = json.load(json_file)
 
         print("\n\n Here's the password associated with each platform:")
+        print(" (if output is blank, there are none of these passwords)")
         for _ in data['passwords_list']:
             print("     ", _)
 
         print("\n\n Here's the unassociated passwords, instead:")
+        print(" (if output is blank, there are none of these passwords)")
         for _ in data['unassociated_passwords']:
             print("     ", _)
 
