@@ -4,6 +4,8 @@
 Simply, you can generate random passwords, as long as you wish, and can register them in a local JSON file.
 
 ```
+## UPDATED TO VERSION 1.0
+
 $ python3 password_generator.py 
 
 How much long the password has to be? >> 16
