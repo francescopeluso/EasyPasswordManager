@@ -34,6 +34,7 @@ Would you like to associate this password with one of you accounts?
 ## TO-DO list:
 - [ ] Improve password managing in JSON file.
 - [x] Improve text formatting, maybe?
+- [ ] Add cryptography
 - [ ] idk, I'll figure it out...
 
 ---
