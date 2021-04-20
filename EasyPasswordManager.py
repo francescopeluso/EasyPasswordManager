@@ -1,12 +1,14 @@
 """
-Easy Password Generator v1.5
-by Francesco Peluso - 20/04/2021
+Easy Password Generator
 """
+__author__ = "Francesco Peluso"
+__version__ = 1.5
+__date__ = "2021-04-20"
 
-import random
-import json
 import os
 import time
+import json
+import random
 
 filename = 'local_archive.json'
 
@@ -53,7 +55,8 @@ def register_password(answer, password):
             temp = data['passwords_list']
         
             # python object to be appended
-            x = {"platform": answer,
+            x = {
+                "platform": answer,
                 "password": password,
                 }
 
