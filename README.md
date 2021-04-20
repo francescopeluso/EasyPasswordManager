@@ -1,5 +1,8 @@
 # EasyPasswordManager
 
+## In case of any bug...
+contact me on [my email](mailto:francescopeluso.dev@gmail.com)
+
 ## What does this script do?
 Simply, you can generate random passwords, as long as you wish, and can register them in a local JSON file.
 
