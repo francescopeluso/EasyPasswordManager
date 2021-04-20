@@ -20,5 +20,5 @@ Because I'm just moving my first steps into serious coding, and to practice more
 
 ## TO-DO list:
 - [ ] Improve password managing in JSON file.
-- [ ] Improve text formatting, maybe?
+- [x] Improve text formatting, maybe?
 - [ ] idk, I'll figure it out...
