@@ -86,13 +86,14 @@ def view_passwords():
 
         print("\n\n Here's the password associated with each platform:")
         print(" (if output is blank, there are none of these passwords)")
-        for _ in data['passwords_list']:
-            print("     ", _)
+
+        for _ in range(len(data['passwords_list'])):
+            print(f"\n   {_ + 1})\n     Platform: {dict(data['passwords_list'][_]).get('platform')}\n     Password: {dict(data['passwords_list'][_]).get('password')}\n")
 
         print("\n\n Here's the unassociated passwords, instead:")
         print(" (if output is blank, there are none of these passwords)")
-        for _ in data['unassociated_passwords']:
-            print("     ", _)
+        for _ in range(len(data['unassociated_passwords'])):
+            print(f"\n   {_ + 1})\n     {data['unassociated_passwords'][_]}")
 
     _ = input("\n Press a key to go back to main screen...")
     screen_clear()
